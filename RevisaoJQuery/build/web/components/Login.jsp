@@ -15,12 +15,12 @@
         <container class="row">
             <div class="login-container col-md-4">
             <div class="login-user form-group">
-                <form id="login" action="">
+                <form id="login"  method="post" action="/RevisaoJQuery/userAuthentication">
                     <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputLogin"  placeholder="Email" required autofocus="autofocus">
+                    <input type="email" class="form-control" id="login" name="login"  placeholder="Email" value="matheus@gmail.com" required autofocus="autofocus">
 
                     <label for="inputPassword">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword"  placeholder="Senha" required>
+                    <input type="password" class="form-control" id="password" name="password" value="matheusGod" placeholder="Senha" required>
                     <div class="form-feedback">
                     </div>
                     <button class="btn btn-primary" type="submit">Entrar</button>

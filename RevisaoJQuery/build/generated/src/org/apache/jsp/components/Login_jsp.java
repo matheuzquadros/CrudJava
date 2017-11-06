@@ -64,7 +64,8 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                    <label for=\"inputPassword\">Senha</label>\n");
       out.write("                    <input type=\"password\" class=\"form-control\" id=\"inputPassword\"  placeholder=\"Senha\" required>\n");
-      out.write("\n");
+      out.write("                    <div class=\"form-feedback\">\n");
+      out.write("                    </div>\n");
       out.write("                    <button class=\"btn btn-primary\" type=\"submit\">Entrar</button>\n");
       out.write("                </form>\n");
       out.write("            </div>\n");

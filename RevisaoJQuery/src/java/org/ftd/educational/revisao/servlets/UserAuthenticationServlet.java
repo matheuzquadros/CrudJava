@@ -6,9 +6,8 @@
 package org.ftd.educational.revisao.servlets;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.servlet.ServletException;
@@ -44,7 +43,6 @@ public class UserAuthenticationServlet extends HttpServlet {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         User user = null;
-        String messageError = null;
 
         if ((login != null) && (password != null)) {
 
@@ -53,28 +51,22 @@ public class UserAuthenticationServlet extends HttpServlet {
 
             try {
                 user = dao.findUser(login, password);
-
                 HttpSession session = request.getSession(true);
                 session.setAttribute("userid", Long.toString(user.getId()));
                 session.setAttribute("username", user.getName());
-                //request.getRequestDispatcher("WEB-INF/views/main.jsp").forward(request, response);
-
+                 request.getRequestDispatcher("/components/main.jsp").forward(request, response);
             } catch (InvalidUserDataException e) {
-
-                //request.setAttribute("msg", e.getMessage());
-                //request.getRequestDispatcher("signin.jsp").forward(request, response);
-                messageError = e.getMessage();
+                request.setAttribute("msg", e.getMessage());
+                request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
+                //request.getRequestDispatcher("/components/main.jsp").forward(request, response);
             }
 
         } else {
-            messageError = "Informe um email e senha para iniciar uma autenticação!";
+             request.setAttribute("msg", "teste");
+                request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
+            //request.getRequestDispatcher("main.jsp").forward(request, response);
         }
-       
-        
-        String json = new Gson().toJson(messageError);
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-        response.getWriter().write(json);
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
