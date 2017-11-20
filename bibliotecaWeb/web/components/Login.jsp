@@ -28,6 +28,7 @@
             </div>
             <div class="create-user form-group" style="display: none">
                 <form action="">
+                    ${msg}
                     <button class="btn btn-primary" type="submit">Criar</button>
                 </form>
             </div>

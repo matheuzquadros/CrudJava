@@ -1,24 +1,24 @@
-package org.ftd.educational.revisao.servlets;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblioteca.web.cmds;
 
 import java.io.IOException;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import org.ftd.educational.catolica.prog4.daos.UserDAO;
-import org.ftd.educational.catolica.prog4.daos.exceptions.InvalidUserDataException;
-import org.ftd.educational.catolica.prog4.entities.User;
 
 /**
  *
  * @author matheus.quadros
  */
-@WebServlet(name = "userAuthentication", urlPatterns = {"/userAuthentication"})
-public class UserAuthenticationServlet extends HttpServlet {
+@WebServlet(name = "BookMvcServlet", urlPatterns = {"/BookMvcServlet"})
+public class BookMvcServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,37 +31,19 @@ public class UserAuthenticationServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String PERSISTENCE_UNIT_NAME = "persistenciaPU";
-
-        String login = request.getParameter("login");
-        String password = request.getParameter("password");
-        User user = null;
-
-        if ((login != null) && (password != null)) {
-
-            EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
-            UserDAO dao = new UserDAO(factory);
-
-            try {
-                user = dao.findUser(login, password);
-                HttpSession session = request.getSession(true);
-                session.setAttribute("userid", Long.toString(user.getId()));
-                session.setAttribute("username", user.getName());
-                 request.getRequestDispatcher("/components/main.jsp").forward(request, response);
-            } catch (InvalidUserDataException e) {
-                request.setAttribute("msg", e.getMessage());
-                //request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
-                 response.sendRedirect("/bibliotecaWeb/components/Login.jsp");
-                //request.getRequestDispatcher("/components/main.jsp").forward(request, response);
-            }
-
-        } else {
-             request.setAttribute("msg", "teste");
-             //response.sendRedirect("/bibliotecaWeb/components/Login.jsp");
-request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
-            //request.getRequestDispatcher("main.jsp").forward(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet BookMvcServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet BookMvcServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -4,10 +4,12 @@ import java.util.List;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import org.ftd.educational.catolica.prog4.daos.ClienteDAO;
+import org.ftd.educational.catolica.prog4.daos.LivroDAO;
 import org.ftd.educational.catolica.prog4.daos.TipoClienteDAO;
 import org.ftd.educational.catolica.prog4.daos.UserDAO;
 import org.ftd.educational.catolica.prog4.daos.exceptions.InvalidUserDataException;
 import org.ftd.educational.catolica.prog4.entities.Cliente;
+import org.ftd.educational.catolica.prog4.entities.Livro;
 import org.ftd.educational.catolica.prog4.entities.TipoCliente;
 import org.ftd.educational.catolica.prog4.entities.User;
 
@@ -27,6 +29,7 @@ public class Init {
 //       findAllUser();
 //        System.out.println(listarCliente());
         authenticateUser();
+        //createDefaultLivros();
     }
 
     private static void createDefaultCliente() {
@@ -121,6 +124,20 @@ public class Init {
         } catch (InvalidUserDataException e) {
             System.out.println(e.getMessage());
         }
+    }
+    
+    private static void createDefaultLivros() {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
+        LivroDAO dao = new LivroDAO(factory);
+        
+        Livro l1 = new Livro(1L, "abc", "As cronicas de arthur", "muito bom", 400, "Bernard Cornwell");
+        Livro l2 = new Livro(2L, "adfc", "Bilhões e bilhões", "otimo", 378, "Carl Sagan");
+        Livro l3 = new Livro(3L, "abcdfd", "Contato", "bom", 255, "Carl Sagan");
+        
+        dao.create(l1);
+        dao.create(l2);
+        dao.create(l3);
+
     }
     
     
