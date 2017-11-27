@@ -44,7 +44,7 @@
 
             <div class="row">
                 <div class="card-container col-md-4">
-                    <div class="card col-md-12" onclick="location.href = '@(Url.Action("Index", "Book"))'">
+                    <div class="card col-md-12" onclick='location.href = "livro?do=lstmodel"'>
                          <img src="https://i.ebayimg.com/thumbs/images/g/7GkAAOSwKUNZ15WB/s-l960.jpg" class="card-image">
                         <div class="card-content">
                             <span class="card-title">Livros</span>

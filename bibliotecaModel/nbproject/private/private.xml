@@ -3,9 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/TipoClienteDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/LivroJpaController.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/TipoCliente.java</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/ClienteJpaController.java</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/ClienteDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/User.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/UserJpaController.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/TipoClienteDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/UserDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/ExemplarDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/Livro.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/daos/LivroDAO.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/Cliente.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/Estante.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/entities/Exemplar.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaModel/src/org/ftd/educational/catolica/prog4/tests/Init.java</file>
         </group>
     </open-files>
 </project-private>
