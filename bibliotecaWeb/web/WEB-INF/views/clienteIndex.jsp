@@ -23,11 +23,11 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col" class="text-center">ISBN</th>
-                            <th scope="col" class="text-center">Titulo</th>
-                            <th scope="col" class="text-center">Num. Paginas</th>
-                            <th scope="col" class="text-center">Autor</th>
-                            <th scope="col" class="text-center">Acoes</th>
+                            <th scope="col" class="text-center">Id</th>
+                            <th scope="col" class="text-center">Nome</th>
+                            <th scope="col" class="text-center">CPF</th>
+                            <th scope="col" class="text-center">Tipo</th>
+                             
                         </tr>
                     </thead>
                     <tbody>

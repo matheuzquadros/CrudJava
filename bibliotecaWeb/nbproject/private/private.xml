@@ -3,15 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/org/ftd/educational/revisao/servlets/UserAuthenticationServlet.java</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/BookMvcServlet.java</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/nbproject/build-impl.xml~</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/main.jsp</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/LivroMvcServlet.java</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/components/main.jsp</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/org/ftd/educational/revisao/json/results/SimpleResult.java</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/components/Login.jsp</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/components/Login.js</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/org/ftd/educational/revisao/servlets/LogoutServlet.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/livroIndex.jsp</file>
         </group>
     </open-files>
 </project-private>
