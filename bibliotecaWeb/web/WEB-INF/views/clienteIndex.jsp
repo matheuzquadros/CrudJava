@@ -27,32 +27,33 @@
                             <th scope="col" class="text-center">Nome</th>
                             <th scope="col" class="text-center">CPF</th>
                             <th scope="col" class="text-center">Tipo</th>
+                            <th scope="col" class="text-center">Ações</th>
                              
                         </tr>
                     </thead>
                     <tbody>
-                        <c:forEach items="${livros}" var="livro">
+                        <c:forEach items="${clientes}" var="cliente">
                             <tr>
-                                <td>${livro.isbn}</td>
-                                <td>${livro.titulo}</td>
-                                <td>${livro.numPaginas}</td>
-                                <td>${livro.nomeAutor}</td>
+                                <td>${cliente.id}</td>
+                                <td>${cliente.name}</td>
+                                <td>${cliente.cpf}</td>
+                                <td>${cliente.tipoClienteid}</td>
                                 <td>
                                    
-                                    <button class="btn btn-secundary" onclick='location.href = "livro?do=readmodel&id=${livro.id}"'>
+                                    <button class="btn btn-secundary" onclick='location.href = "cliente?do=readmodel&id=${cliente.id}"'>
                                         Detalhes
                                     </button>
                                    
-                                    <button class="btn btn-primary" onclick='location.href = "livro?do=updmodel&id=${livro.id}"'>
+                                    <button class="btn btn-primary" onclick='location.href = "cliente?do=updmodel&id=${cliente.id}"'>
                                         Editar
                                     </button>
-                                    <button class="btn btn-danger" onclick='location.href = "livro?do=del&id=${livro.id}"'> Remover</button>
+                                    <button class="btn btn-danger" onclick='location.href = "cliente?do=del&id=${cliente.id}"'> Remover</button>
                                 </td>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
-                <button class="btn btn-lg btn-success" onclick='location.href = "livro?do=addmodel"'>
+                <button class="btn btn-lg btn-success" onclick='location.href = "cliente?do=addmodel"'>
                     Criar Novo
                 </button>
             </div>

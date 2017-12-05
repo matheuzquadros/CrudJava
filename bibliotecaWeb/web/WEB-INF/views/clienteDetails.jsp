@@ -24,7 +24,7 @@
     </tr>
     <tr>
         <th>Nome</th>
-        <td>${cliente.nome}</td>
+        <td>${cliente.name}</td>
     </tr>
     <tr>
         <th>CPF:</th>
@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <th>Tipo do cliente:</th>
-        <td>${livro.tipoClienteId}</td>
+        <td>${livro.tipoClienteid}</td>
     </tr>
     
 </tbody>
