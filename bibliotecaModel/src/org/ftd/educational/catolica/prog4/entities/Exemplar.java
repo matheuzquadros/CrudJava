@@ -21,6 +21,9 @@ public class Exemplar implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
+    @Column(unique = false, nullable = false, length = 15)
+    private int numEdicao;
+    
     @OneToOne
     @Id
     @PrimaryKeyJoinColumn(name="id", referencedColumnName="id")
@@ -30,16 +33,31 @@ public class Exemplar implements Serializable{
         super();
     }
 
-    public Exemplar(Long id, Livro livro) {
+    public Exemplar(Long id, Livro livro, int numEdicao) {
         this();
         this.id = id;
         this.livro = livro;
+        this.numEdicao = numEdicao;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    
     public Long getId() {
         return id;
     }
 
+    public int getNumEdicao() {
+        return numEdicao;
+    }
+
+    public void setNumEdicao(int numEdicao) {
+        this.numEdicao = numEdicao;
+    }
+
+   
 
     public Livro getLivro() {
         return livro;
