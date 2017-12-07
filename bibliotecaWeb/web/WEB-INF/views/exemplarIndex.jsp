@@ -20,6 +20,7 @@
                             <th scope="col" class="text-center">Id</th>
                             <th scope="col" class="text-center">Livro</th>
                             <th scope="col" class="text-center">Nº da edição</th>
+                            <th scope="col" class="text-center">Ações</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,4 +1,4 @@
 <hr />
 <footer>
-    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    <p>&copy; 2017 - Biblioteca do Matheus</p>
 </footer>

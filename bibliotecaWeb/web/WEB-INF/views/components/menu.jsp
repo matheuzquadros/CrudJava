@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Biblioteca</a>
+            <a class="navbar-brand" href="/bibliotecaWeb">Biblioteca</a>
             <a href="/bibliotecaWeb/logout">
                 <button class="btn btn-secundary">
                     <i class="fa fa-user"></i>

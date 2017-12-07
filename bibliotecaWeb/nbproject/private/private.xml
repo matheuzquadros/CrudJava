@@ -3,12 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/exemplarNew.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/clienteNew.jsp</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/ClienteMvcServlet.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/components/menu.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/clienteDetails.jsp</file>
-            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/livroNew.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/LivroMvcServlet.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/exemplarDetails.jsp</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/ClienteMvcServlet.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/src/java/biblioteca/web/cmds/ExemplarMvcServlet.java</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/livroNew.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/clienteIndex.jsp</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/components/Login.jsp</file>
+            <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/components/imports.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/livroIndex.jsp</file>
             <file>file:/C:/Users/matheus.quadros/Pictures/bibliotecaWeb/web/WEB-INF/views/livroDetails.jsp</file>
         </group>

@@ -47,19 +47,16 @@ public class UserAuthenticationServlet extends HttpServlet {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("userid", Long.toString(user.getId()));
                 session.setAttribute("username", user.getName());
-                 request.getRequestDispatcher("/components/main.jsp").forward(request, response);
+                 response.sendRedirect(request.getContextPath() + "/");
             } catch (InvalidUserDataException e) {
                 request.setAttribute("msg", e.getMessage());
-                //request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
-                 response.sendRedirect("/bibliotecaWeb/components/Login.jsp");
-                //request.getRequestDispatcher("/components/main.jsp").forward(request, response);
+                 response.sendRedirect(request.getContextPath() + "/");
             }
 
         } else {
              request.setAttribute("msg", "teste");
-             //response.sendRedirect("/bibliotecaWeb/components/Login.jsp");
-request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
-            //request.getRequestDispatcher("main.jsp").forward(request, response);
+            request.getRequestDispatcher("/login").forward(request, response);
+            //response.sendRedirect(request.getContextPath() + "/login");
         }
 
     }

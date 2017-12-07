@@ -37,7 +37,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session=request.getSession();  
         session.invalidate();  
         //request.getRequestDispatcher("/components/Login.jsp").forward(request, response);
-        response.sendRedirect("/bibliotecaWeb/components/Login.jsp");
+        response.sendRedirect("/bibliotecaWeb/login");
                 
     }
 

@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
  * @author matheus.quadros
  */
 @WebFilter(filterName = "MainFilter", 
-        urlPatterns = {"/teste/main.jsp","/WEB-INF/views/main.jsp"})
+        urlPatterns = {"/", "/exemplar", "/livro", "/cliente"})
 
 public class MainFilter implements Filter {
     
@@ -71,7 +71,7 @@ public class MainFilter implements Filter {
         if (isUserAuthorized) {
             chain.doFilter(request, response);
         } else {
-            req.getRequestDispatcher("login.jsp").forward(req, res);
+            req.getRequestDispatcher("/login").forward(req, res);
         }
         
     }
