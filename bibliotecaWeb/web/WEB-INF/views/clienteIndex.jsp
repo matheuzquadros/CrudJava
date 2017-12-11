@@ -17,7 +17,7 @@
 
         <jsp:include page="components/menu.jsp" />
     <container class="container">
-        <h1>Livros</h1>
+        <h1>Clientes</h1>
         <div class="row">
             <div class="col-md-12 text-center">
                 <table class="table">
@@ -40,20 +40,20 @@
                                 <td>${cliente.tipoClienteid}</td>
                                 <td>
                                    
-                                    <button class="btn btn-secundary" onclick='location.href = "cliente?do=readmodel&id=${cliente.id}"'>
+                                    <button class="btn btn-secundary" onclick='location.href = "mvccliente?do=readmodel&id=${cliente.id}"'>
                                         Detalhes
                                     </button>
                                    
-                                    <button class="btn btn-primary" onclick='location.href = "cliente?do=updmodel&id=${cliente.id}"'>
+                                    <button class="btn btn-primary" onclick='location.href = "mvccliente?do=updmodel&id=${cliente.id}"'>
                                         Editar
                                     </button>
-                                    <button class="btn btn-danger" onclick='location.href = "cliente?do=del&id=${cliente.id}"'> Remover</button>
+                                    <button class="btn btn-danger" onclick='location.href = "mvccliente?do=del&id=${cliente.id}"'> Remover</button>
                                 </td>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
-                <button class="btn btn-lg btn-success" onclick='location.href = "cliente?do=addmodel"'>
+                <button class="btn btn-lg btn-success" onclick='location.href = "mvccliente?do=addmodel"'>
                     Criar Novo
                 </button>
             </div>

@@ -21,7 +21,7 @@ import org.ftd.educational.catolica.prog4.entities.Livro;
  *
  * @author matheus.quadros
  */
-@WebServlet(name = "BookMvcServlet", urlPatterns = {"/livro"})
+@WebServlet(name = "BookMvcServlet", urlPatterns = {"/mvclivro"})
 public class LivroMvcServlet extends HttpServlet {
 
     String PERSISTENCE_UNIT_NAME = "persistenciaPU";
@@ -109,8 +109,8 @@ public class LivroMvcServlet extends HttpServlet {
 
         saveOrUpdateLivro(request);
 
-        String successNextAction = "livro?do=lstmodel";
-        String failureNextAction = "livro?do=addmodel";
+        String successNextAction = "mvclivro?do=lstmodel";
+        String failureNextAction = "mvclivro?do=addmodel";
 
         return successNextAction;
     }
@@ -120,9 +120,9 @@ public class LivroMvcServlet extends HttpServlet {
         String successNextAction = "";
         try {
             saveOrUpdateLivro(request);
-            successNextAction = "livro?do=lstmodel";
+            successNextAction = "mvclivro?do=lstmodel";
         } catch (Exception e) {
-            successNextAction = "livro?do=updmodel&id=" + id;
+            successNextAction = "mvclivro?do=updmodel&id=" + id;
         }
 
         return successNextAction;
@@ -135,9 +135,9 @@ public class LivroMvcServlet extends HttpServlet {
             EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
             LivroDAO dao = new LivroDAO(factory);
             dao.destroy(Long.valueOf(id));
-            successNextAction = "livro?do=lstmodel";
+            successNextAction = "mvclivro?do=lstmodel";
         } catch (NumberFormatException | NonexistentEntityException e) {
-            successNextAction = "livro?do=readmodel&id=" + id;
+            successNextAction = "mvclivro?do=readmodel&id=" + id;
         }
 
         return successNextAction;

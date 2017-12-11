@@ -23,7 +23,7 @@ import org.ftd.educational.catolica.prog4.entities.Livro;
  *
  * @author matheus.quadros
  */
-@WebServlet(name = "ExemplarMvcServlet", urlPatterns = {"/exemplar"})
+@WebServlet(name = "ExemplarMvcServlet", urlPatterns = {"/mvcexemplar"})
 public class ExemplarMvcServlet extends HttpServlet {
 
     String PERSISTENCE_UNIT_NAME = "persistenciaPU";
@@ -118,8 +118,8 @@ public class ExemplarMvcServlet extends HttpServlet {
 
         saveOrUpdateExemplar(request);
 
-        String successNextAction = "exemplar?do=lstmodel";
-        String failureNextAction = "exemplar?do=addmodel";
+        String successNextAction = "mvcexemplar?do=lstmodel";
+        String failureNextAction = "mvcexemplar?do=addmodel";
 
         return successNextAction;
     }
@@ -129,9 +129,9 @@ public class ExemplarMvcServlet extends HttpServlet {
         String successNextAction = "";
         try {
             saveOrUpdateExemplar(request);
-            successNextAction = "exemplar?do=lstmodel";
+            successNextAction = "mvcexemplar?do=lstmodel";
         } catch (Exception e) {
-            successNextAction = "exemplar?do=updmodel&id=" + id;
+            successNextAction = "mvcexemplar?do=updmodel&id=" + id;
         }
 
         return successNextAction;
@@ -144,9 +144,9 @@ public class ExemplarMvcServlet extends HttpServlet {
             EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
             ExemplarDAO dao = new ExemplarDAO(factory);
             dao.destroy(Long.valueOf(id));
-            successNextAction = "exemplar?do=lstmodel";
+            successNextAction = "mvcexemplar?do=lstmodel";
         } catch (NumberFormatException | NonexistentEntityException e) {
-            successNextAction = "exemplar?do=readmodel&id=" + id;
+            successNextAction = "mvcexemplar?do=readmodel&id=" + id;
         }
 
         return successNextAction;

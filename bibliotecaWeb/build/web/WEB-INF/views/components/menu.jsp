@@ -3,10 +3,14 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/bibliotecaWeb">Biblioteca</a>
             <a href="/bibliotecaWeb/logout">
-                <button class="btn btn-secundary">
-                    <i class="fa fa-user"></i>
+                <button class="btn btn-secundary pull-right" >
+                    Sair
                 </button>
             </a>
+            
+            <label class="pull-right text-white" style="margin-right: 10px;" >
+                 Olá ${username}!
+            </label>
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">

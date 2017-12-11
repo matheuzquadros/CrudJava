@@ -30,15 +30,12 @@
         <th>CPF:</th>
         <td>${cliente.cpf}</td>
     </tr>
-    <tr>
-        <th>Tipo do cliente:</th>
-        <td>${livro.tipoClienteid}</td>
-    </tr>
-    
 </tbody>
 </table>
 
-<button class="btn btn-danger pull-right">Excluir</button>
+<button class="btn btn-danger pull-right" onclick='location.href = "mvccliente?do=del&id=${cliente.id}"'>
+    Excluir
+</button>
 </div>
 <jsp:include page="components/footer.jsp" />
 </div>

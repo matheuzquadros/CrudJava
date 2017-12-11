@@ -17,7 +17,7 @@
         <h1>Criar novo livro</h1>
         <div class="row">
             <div class="col-md-12">
-                <form action="livro?do=add&id=${livro.id}" method="POST">
+                <form action="mvclivro?do=add&id=${livro.id}" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputId">Id</label>

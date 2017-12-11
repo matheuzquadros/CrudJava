@@ -17,7 +17,7 @@
         <h1>Criar novo cliente</h1>
         <div class="row">
             <div class="col-md-12">
-                <form action="cliente?do=add&id=${cliente.id}" method="POST">
+                <form action="mvccliente?do=add&id=${cliente.id}" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputId">Id</label>

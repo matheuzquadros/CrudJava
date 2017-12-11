@@ -16,7 +16,7 @@
          <jsp:include page="components/menu.jsp" />
         <div class="row">
             <div class="card-container col-md-4">
-                <div class="card col-md-12" onclick='location.href = "livro?do=lstmodel"'>
+                <div class="card col-md-12" onclick='location.href = "mvclivro?do=lstmodel"'>
                      <img src="https://i.ebayimg.com/thumbs/images/g/7GkAAOSwKUNZ15WB/s-l960.jpg" class="card-image">
                     <div class="card-content">
                         <span class="card-title">Livros</span>
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="card-container col-md-4">
-                <div class="card col-md-12" onclick='location.href = "exemplar?do=lstmodel"'>
+                <div class="card col-md-12" onclick='location.href = "mvcexemplar?do=lstmodel"'>
                     <img src="https://media.timeout.com/images/103641970/630/472/image.jpg" class="card-image">
                     <div class="card-content">
                         <span class="card-title">Exemplares</span>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container col-md-4" data-test="${username}" onclick='location.href = "cliente?do=lstmodel"'>
+            <div class="card-container col-md-4" data-test="${username}" onclick='location.href = "mvccliente?do=lstmodel"'>
                 <div class="card col-md-12">
                     <img src="http://1.bp.blogspot.com/-bGmVA96rnIo/UHrRKzIkjEI/AAAAAAAACk4/12rlAPir2P0/s1600/girl-with-books.jpg" class="card-image">
                     <div class="card-content">

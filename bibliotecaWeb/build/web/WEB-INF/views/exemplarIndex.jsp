@@ -31,20 +31,20 @@
                                 <td>${exemplar.numEdicao}</td>
                                 <td>
                                    
-                                    <button class="btn btn-secundary" onclick='location.href = "exemplar?do=readmodel&id=${exemplar.id}"'>
+                                    <button class="btn btn-secundary" onclick='location.href = "mvcexemplar?do=readmodel&id=${exemplar.id}"'>
                                         Detalhes
                                     </button>
                                    
-                                    <button class="btn btn-primary" onclick='location.href = "exemplar?do=updmodel&id=${exemplar.id}"'>
+                                    <button class="btn btn-primary" onclick='location.href = "mvcexemplar?do=updmodel&id=${exemplar.id}"'>
                                         Editar
                                     </button>
-                                    <button class="btn btn-danger" onclick='location.href = "exemplar?do=del&id=${exemplar.id}"'> Remover</button>
+                                    <button class="btn btn-danger" onclick='location.href = "mvcexemplar?do=del&id=${exemplar.id}"'> Remover</button>
                                 </td>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
-                <button class="btn btn-lg btn-success" onclick='location.href = "exemplar?do=addmodel"'>
+                <button class="btn btn-lg btn-success" onclick='location.href = "mvcexemplar?do=addmodel"'>
                     Criar Novo
                 </button>
             </div>

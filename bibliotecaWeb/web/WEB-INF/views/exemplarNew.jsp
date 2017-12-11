@@ -17,7 +17,7 @@
         <h1>Criar novo exemplar</h1>
         <div class="row">
             <div class="col-md-12">
-                <form action="exemplar?do=add&id=${exemplar.id}" method="POST">
+                <form action="mvcexemplar?do=add&id=${exemplar.id}" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputId">Id</label>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputTitulo">Número da edição:</label>
-                            <input type="text" class="form-control" id="inputTitulo" name="inputNumEdicao" placeholder="Título" value="${exemplar.numEdicao}" required>
+                            <input type="text" class="form-control" id="inputTitulo" name="inputNumEdicao" placeholder="Número da edição:" value="${exemplar.numEdicao}" required>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Salvar</button>

@@ -39,20 +39,20 @@
                                 <td>${livro.nomeAutor}</td>
                                 <td>
                                    
-                                    <button class="btn btn-secundary" onclick='location.href = "livro?do=readmodel&id=${livro.id}"'>
+                                    <button class="btn btn-secundary" onclick='location.href = "mvclivro?do=readmodel&id=${livro.id}"'>
                                         Detalhes
                                     </button>
                                    
-                                    <button class="btn btn-primary" onclick='location.href = "livro?do=updmodel&id=${livro.id}"'>
+                                    <button class="btn btn-primary" onclick='location.href = "mvclivro?do=updmodel&id=${livro.id}"'>
                                         Editar
                                     </button>
-                                    <button class="btn btn-danger" onclick='location.href = "livro?do=del&id=${livro.id}"'> Remover</button>
+                                    <button class="btn btn-danger" onclick='location.href = "mvclivro?do=del&id=${livro.id}"'> Remover</button>
                                 </td>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
-                <button class="btn btn-lg btn-success" onclick='location.href = "livro?do=addmodel"'>
+                <button class="btn btn-lg btn-success" onclick='location.href = "mvclivro?do=addmodel"'>
                     Criar Novo
                 </button>
             </div>

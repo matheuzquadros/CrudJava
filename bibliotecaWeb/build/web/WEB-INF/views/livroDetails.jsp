@@ -41,7 +41,9 @@
 </tbody>
 </table>
 
-<button class="btn btn-danger pull-right">Excluir</button>
+<button class="btn btn-danger pull-right" onclick='location.href = "mvclivro?do=del&id=${livro.id}"'>
+    Excluir
+</button>
 </div>
 <jsp:include page="components/footer.jsp" />
 </div>

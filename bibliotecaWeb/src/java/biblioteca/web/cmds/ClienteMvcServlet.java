@@ -23,7 +23,7 @@ import org.ftd.educational.catolica.prog4.entities.Livro;
  *
  * @author matheus.quadros
  */
-@WebServlet(name = "ClienteMvcServlet", urlPatterns = {"/cliente"})
+@WebServlet(name = "ClienteMvcServlet", urlPatterns = {"/mvccliente"})
 public class ClienteMvcServlet extends HttpServlet {
 
     String PERSISTENCE_UNIT_NAME = "persistenciaPU";
@@ -110,8 +110,8 @@ public class ClienteMvcServlet extends HttpServlet {
 
         saveOrUpdateCliente(request);
 
-        String successNextAction = "cliente?do=lstmodel";
-        String failureNextAction = "cliente?do=addmodel";
+        String successNextAction = "mvccliente?do=lstmodel";
+        String failureNextAction = "mvccliente?do=addmodel";
 
         return successNextAction;
     }
@@ -121,9 +121,9 @@ public class ClienteMvcServlet extends HttpServlet {
         String successNextAction = "";
         try {
             saveOrUpdateCliente(request);
-            successNextAction = "cliente?do=lstmodel";
+            successNextAction = "mvccliente?do=lstmodel";
         } catch (Exception e) {
-            successNextAction = "cliente?do=updmodel&id=" + id;
+            successNextAction = "mvccliente?do=updmodel&id=" + id;
         }
 
         return successNextAction;
@@ -136,9 +136,9 @@ public class ClienteMvcServlet extends HttpServlet {
             EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
             ClienteDAO dao = new ClienteDAO(factory);
             dao.destroy(Long.valueOf(id));
-            successNextAction = "cliente?do=lstmodel";
+            successNextAction = "mvccliente?do=lstmodel";
         } catch (NumberFormatException | NonexistentEntityException e) {
-            successNextAction = "cliente?do=readmodel&id=" + id;
+            successNextAction = "mvccliente?do=readmodel&id=" + id;
         }
 
         return successNextAction;
