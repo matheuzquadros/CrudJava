@@ -5,7 +5,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import org.ftd.educational.catolica.prog4.entities.Livro;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-12-11T21:35:41")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-12-13T19:49:40")
 @StaticMetamodel(Exemplar.class)
 public class Exemplar_ { 
 

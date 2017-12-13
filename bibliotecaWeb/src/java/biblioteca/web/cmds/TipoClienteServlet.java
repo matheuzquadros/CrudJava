@@ -14,16 +14,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.ftd.educational.catolica.prog4.daos.TipoClienteDAO;
-import org.ftd.educational.catolica.prog4.daos.LivroDAO;
 import org.ftd.educational.catolica.prog4.daos.exceptions.NonexistentEntityException;
 import org.ftd.educational.catolica.prog4.entities.TipoCliente;
-import org.ftd.educational.catolica.prog4.entities.Livro;
 
 /**
  *
  * @author matheus.quadros
  */
-@WebServlet(name = "TipoTipoClienteServlet", urlPatterns = {"/mvctipotipocliente"})
+@WebServlet(name = "TipoTipoClienteServlet", urlPatterns = {"/mvctipocliente"})
 public class TipoClienteServlet extends HttpServlet {
 
     String PERSISTENCE_UNIT_NAME = "persistenciaPU";

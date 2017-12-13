@@ -13,11 +13,11 @@
         <jsp:include page="components/imports.jsp" />
     </head>
     <body>
-         <jsp:include page="components/menu.jsp" />
+        <jsp:include page="components/menu.jsp" />
         <div class="row">
             <div class="card-container col-md-4">
                 <div class="card col-md-12" onclick='location.href = "mvclivro?do=lstmodel"'>
-                     <img src="https://i.ebayimg.com/thumbs/images/g/7GkAAOSwKUNZ15WB/s-l960.jpg" class="card-image">
+                    <img src="https://i.ebayimg.com/thumbs/images/g/7GkAAOSwKUNZ15WB/s-l960.jpg" class="card-image">
                     <div class="card-content">
                         <span class="card-title">Livros</span>
                         <p>
@@ -48,13 +48,24 @@
                     </div>
                 </div>
             </div>
+            <div class="card-container col-md-4" data-test="${username}" onclick='location.href = "mvctipocliente?do=lstmodel"'>
+                <div class="card col-md-12">
+                    <img src="https://kaksimedia.com/kaxi/wp-content/uploads/2017/04/cria-varios-cliente-tipo.jpg" class="card-image">
+                    <div class="card-content">
+                        <span class="card-title">Tipos de clientes</span>
+                        <p>
+                            Adicione novos tipos de clientes...
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </body>
 </html>
 
 <style>
-   body {
+    body {
         background-color: #e4e4e4;
         overflow: hidden;
     }
@@ -76,9 +87,9 @@
         border-radius: 2px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     }
-        img {
-            max-width: 100%;
-        }
+    img {
+        max-width: 100%;
+    }
     .card-image {
         width: 100%;
         max-width: 100%;
@@ -92,11 +103,11 @@
         border-radius: 0 0 2px 2px;
     }
 
-        .card .card-content .card-title {
-            display: block;
-            line-height: 32px;
-            margin-bottom: 8px;
-        }
+    .card .card-content .card-title {
+        display: block;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
 
     .card .card-title {
         font-size: 24px;
